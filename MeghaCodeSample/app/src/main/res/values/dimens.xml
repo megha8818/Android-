@@ -1,0 +1,31 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+    <dimen name="navigation_drawer_width">240dp</dimen>
+
+    <dimen name="framelayout_dimen">145dp</dimen>
+    <dimen name="listview_linearlayout_margin">15dp</dimen>
+    <dimen name="listview_linearlayout_padding">5dp</dimen>
+    <dimen name="listView_feedtitle_size">14sp</dimen>
+    <dimen name="listView_feedtitlesubtitle_size">16sp</dimen>
+    <dimen name="listView_feedpublisheddate_size">12sp</dimen>
+
+    <dimen name="details_framelayout_height">240dp</dimen>
+    <dimen name="details_imageview_height">240dp</dimen>
+    <dimen name="details_linearlayout_margin_lr">30dp</dimen>
+    <dimen name="details_linearlayout_margin_top">110dp</dimen>
+    <dimen name="details_textview_feedtype_padding">5dp</dimen>
+    <dimen name="details_textview_feedtype_size">20dp</dimen>
+    <dimen name="details_textview_feedtitle_pm">5dp</dimen>
+    <dimen name="details_textview_feedtitle_textsize">16dp</dimen>
+    <dimen name="details_textview_feedpublished_pm">5dp</dimen>
+    <dimen name="details_textview_feedpublished_textsize">16dp</dimen>
+    <dimen name="details_textview_feedcontent_textsize">16dp</dimen>
+    <dimen name="details_textview_feedcontent_marginTop">15dp</dimen>
+    <dimen name="details_textview_feedsubtitle_textsize">20dp</dimen>
+    <dimen name="details_linearlayout_margin">20dp</dimen>
+    <dimen name="details_linearlayout_padding">10dp</dimen>
+
+</resources>

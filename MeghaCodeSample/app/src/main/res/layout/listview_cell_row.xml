@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="145dp"
+    android:background="@android:color/white">
+
+    <FrameLayout
+        android:id="@+id/mFrameLayout_ImageHolder"
+        android:layout_width="@dimen/framelayout_dimen"
+        android:layout_height="@dimen/framelayout_dimen">
+
+        <ImageView
+            android:id="@+id/mImageView_FeedImage"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:gravity="center_vertical"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_launcher" />
+
+        <ImageView
+            android:id="@+id/mImageView_FeedImage1"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:gravity="center_vertical"
+            android:scaleType="centerCrop"
+            android:src="@drawable/triangle" />
+    </FrameLayout>
+
+
+    <LinearLayout
+        android:id="@+id/mLinerLayout_FeedInfoHolder"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_margin="@dimen/listview_linearlayout_margin"
+        android:layout_toRightOf="@+id/mFrameLayout_ImageHolder"
+        android:orientation="vertical"
+        android:padding="@dimen/listview_linearlayout_padding">
+
+        <com.megha.sample.customwidget.CustomTextView
+            android:id="@+id/mTextView_FeedTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:text="testing"
+            android:textColor="@color/listView_feedTitleColor"
+            android:textSize="@dimen/listView_feedtitle_size"
+            android:textStyle="bold"
+            app:fontName="@string/textview_font" />
+
+        <com.megha.sample.customwidget.CustomTextView
+            android:id="@+id/mTextView_FeedSubTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxLines="3"
+            android:minLines="1"
+            android:text="NJASAP credits its response team with compelling prompt management action"
+            android:textColor="@color/listView_feedTitleSubtitle"
+            android:textSize="@dimen/listView_feedtitlesubtitle_size"
+            app:fontName="@string/textview_font" />
+
+        <com.megha.sample.customwidget.CustomTextView
+            android:id="@+id/mTextView_FeedPublishedDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:text="testing"
+            android:textColor="@color/listView_feedPublishedDate"
+            android:textSize="@dimen/listView_feedpublisheddate_size"
+            android:textStyle="bold"
+            app:fontName="@string/textview_font" />
+    </LinearLayout>
+
+
+</RelativeLayout>

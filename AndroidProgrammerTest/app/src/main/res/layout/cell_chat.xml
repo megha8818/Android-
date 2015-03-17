@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <customwidget.CustomImageView
+        android:id="@+id/mImageView_ChatImage"
+        android:layout_width="@dimen/chat_image_size"
+        android:layout_height="@dimen/chat_image_size"
+        android:adjustViewBounds="true"
+        android:contentDescription="@string/chat_description"
+        android:scaleType="centerCrop"
+        android:layout_marginTop="@dimen/chat_customimageview_margintopleft"
+        android:layout_marginLeft="@dimen/chat_customimageview_margintopleft"
+        android:src="@drawable/ic_apppartner"
+        />
+
+    <LinearLayout
+        android:id="@+id/mLinerLayout_ChatInfoHolder"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="@dimen/chat_linearlayout_margin_topbottom"
+        android:layout_marginBottom="@dimen/chat_linearlayout_margin_topbottom"
+        android:layout_marginRight="@dimen/chat_linearlayout_margin_leftright"
+        android:layout_marginLeft="@dimen/chat_linearlayout_margin_leftright"
+        android:layout_toRightOf="@+id/mImageView_ChatImage"
+        android:orientation="vertical"
+        android:padding="@dimen/chat_linearlayout_padding_3dp" >
+
+        <customwidget.CustomTextView
+            android:id="@+id/usernameTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/chat_name_textsize"
+            android:textColor="@android:color/black"
+            android:text="testing"
+            app:fontName = "machinato.ttf"/>
+
+        <customwidget.CustomTextView
+            android:id="@+id/messageTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/chat_message_textsize"
+            android:text="testing"
+            android:textColor="@android:color/black"
+            app:fontName = "machinato_light.ttf"/>
+    </LinearLayout>
+
+</RelativeLayout>

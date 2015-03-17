@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="primaryColor">#0382c8</color>
+    <color name="primaryColorDark">#ffffff</color>
+
+    <color name="listView_feedTitleColor">#0065a7</color>
+    <color name="listView_feedTitleSubtitle">#303030</color>
+    <color name="listView_feedPublishedDate">#909090</color>
+
+    <color name="details_feedPublishedDate">#a1a3a4</color>
+    <color name="details_feedContent">#a4a4a4</color>
+    <color name="details_feedSubtitle">#303030</color>
+
+    <color name="drawer_divider_color">#eee</color>
+</resources>

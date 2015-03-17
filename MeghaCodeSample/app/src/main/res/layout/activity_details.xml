@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/mScrollView_FeedDetailsHolder"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@android:color/white"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:id="@+id/content"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/details_framelayout_height">
+
+            <ImageView
+                android:id="@+id/mImageView_Details_FeedImage"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/details_imageview_height"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:adjustViewBounds="true"
+                android:scaleType="fitXY" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="@dimen/details_linearlayout_margin_lr"
+                android:layout_marginRight="@dimen/details_linearlayout_margin_lr"
+                android:layout_marginTop="@dimen/details_linearlayout_margin_top"
+                android:orientation="vertical">
+
+                <com.megha.sample.customwidget.CustomTextView
+                    android:id="@+id/mTextView_FeedType"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/button_color"
+                    android:ellipsize="end"
+                    android:padding="@dimen/details_textview_feedtype_padding"
+                    android:singleLine="true"
+                    android:text="Data"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/details_textview_feedtype_size"
+                    app:fontName="@string/textview_font" />
+
+                <com.megha.sample.customwidget.CustomTextView
+                    android:id="@+id/mTextView_Details_FeedTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/details_textview_feedtitle_pm"
+                    android:ellipsize="end"
+                    android:paddingLeft="@dimen/details_textview_feedtitle_pm"
+                    android:paddingRight="@dimen/details_textview_feedtitle_pm"
+                    android:singleLine="true"
+                    android:text="testing"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/details_textview_feedtitle_textsize"
+                    app:fontName="@string/textview_font" />
+
+                <com.megha.sample.customwidget.CustomTextView
+                    android:id="@+id/mTextView_Details_FeedPublishDate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/details_textview_feedpublished_pm"
+                    android:ellipsize="end"
+                    android:paddingLeft="@dimen/details_textview_feedpublished_pm"
+                    android:paddingRight="@dimen/details_textview_feedpublished_pm"
+                    android:singleLine="true"
+                    android:text="testing"
+                    android:textColor="@color/details_feedPublishedDate"
+                    android:textSize="@dimen/details_textview_feedpublished_textsize"
+                    app:fontName="@string/textview_font" />
+
+            </LinearLayout>
+        </FrameLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/listview_linearlayout_margin"
+            android:orientation="vertical"
+            android:padding="@dimen/details_linearlayout_padding">
+
+            <com.megha.sample.customwidget.CustomTextView
+                android:id="@+id/mTextView_Details_FeedSubtitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Data"
+                android:textColor="@color/details_feedSubtitle"
+                android:textSize="@dimen/details_textview_feedsubtitle_textsize"
+                app:fontName="@string/textview_font" />
+
+            <com.megha.sample.customwidget.CustomTextView
+                android:id="@+id/mTextView_Details_FeedContent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/details_textview_feedcontent_marginTop"
+                android:text="testing"
+                android:textColor="@color/details_feedContent"
+                android:textSize="@dimen/details_textview_feedcontent_textsize"
+                app:fontName="@string/textview_font" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>

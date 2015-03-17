@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">MeghaCodeSample</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="drawer_open">open</string>
+    <string name="drawer_close">close</string>
+    <string name="feed_type">FeedType</string>
+    <string name="feed_All">All</string>
+    <string name="feed_position_report">Position Report</string>
+    <string name="feed_rally_point">RallyPoint</string>
+    <string name="feed_leading_edge">Leading Edge</string>
+    <string-array
+        name="navigation_array">
+        <item>@string/feed_All</item>
+        <item>@string/feed_position_report</item>
+        <item>@string/feed_rally_point</item>
+        <item>@string/feed_leading_edge</item>
+    </string-array>
+    <string name="textview_font">avenir_next.ttc</string>
+
+</resources>
